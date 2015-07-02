@@ -11,6 +11,7 @@ pre code{margin:0;padding:0;border:none;background:none;font-family:Consolas,'Lu
 #wechat_share_tip.demo:after{content:'使用背景图片，定义样式';position:absolute;top:50px;right:10px;color:#aaa;font-size:1.6rem;}
 
 .demo{margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #ccc;}
+.demo:last-child{margin-bottom:0;border-bottom:none;}
 .demo h3{margin-top:10px;}
 .demo h3:first-child{margin-top:0;}
 .demo p + p{margin-top:10px;}
