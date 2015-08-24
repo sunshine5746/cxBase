@@ -319,8 +319,11 @@ display:flex;
 -webkit-flex:1 1 50%;
 flex:1 1 50%;
 }
-
 .button_group .button{border-radius:0;}
+
+.button_box .button + .button,
+.button_box .button.full + .button.full{margin:0 0 0 10px;}
+
 .button_group .button + .button,
 .button_group .button.full + .button.full{margin:0;}
 .button_group .button + .button:after{content:'';position:absolute;top:0;left:0;width:1px;height:100%;background-color:rgba(255,255,255,0.2);}
