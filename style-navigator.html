@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>cxStyle</title>
+<title>CSS 导航 - cxStyle</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -23,34 +23,55 @@
   <div id="header" class="header">
     <header>
       <h1>cxStyle</h1>
+      <a class="icon back" href="index.html"></a>
     </header>
   </div>
 
   <div class="mbox">
-    <h2>CSS</h2>
+    <h2>Tab 样式</h2>
   </div>
-  <nav class="nav_link">
-    <a href="style.html">Base</a>
-    <a href="style-content.html">Content</a>
-    <a href="style-form.html">Form</a>
-    <a href="style-input.html">Input Type For HTML5</a>
-    <a href="style-navigator.html">Navigation</a>
-  </nav>
+
+  <div class="nav_tab">
+  <!-- <div class="nav_tab fixed"> -->
+  <!-- <div class="nav_tab radius"> -->
+  <!-- <div class="nav_tab radius fixed"> -->
+    <nav>
+      <a class="n" href="#">分类</a>
+      <a href="#">分类</a>
+      <a href="#">分类</a>
+    </nav>
+  </div>
 
   <div class="mbox">
-    <h2>JavaScript</h2>
+    <h2>Tab 圆角样式</h2>
+  </div>
+  <div class="nav_tab radius">
+    <nav>
+      <a class="n" href="#">分类</a>
+      <a href="#">分类</a>
+      <a href="#">分类</a>
+    </nav>
+  </div>
+
+  <div class="mbox">
+    <h2>垂直排列样式</h2>
   </div>
   <nav class="nav_link">
-    <a href="javascript.html">Base</a>
-    <a href="javascript-form-validation.html">Form Validation</a>
-    <a href="javascript-fixed.html">iOS Fixed</a>
-    <a href="javascript-panel.html">Panel</a>
-    <a href="javascript-slide.html">Slide</a>
-    <a href="javascript-upfile-pic.html">Upload Picture</a>
+    <a href="#">分类</a>
+    <a href="#">分类</a>
+    <a href="#">分类</a>
   </nav>
 
   <footer class="footer"></footer>
 </div>
 <script src="js/controller/reday.js"></script>
+<script>
+(function() {
+  $('.nav_tab').on('click', 'a', function() {
+    event.preventDefault();
+    $(this).addClass('n').siblings().removeClass('n');
+  });
+})();
+</script>
 </body>
 </html>

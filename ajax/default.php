@@ -2,10 +2,18 @@
 $result = array();
 $result['status'] = 'success';
 //$result['status'] = 'error';
-$result['message'] = '<p>This a test.</p><p>Status: ' . $result['status'] . '</p>';
+$result['message'] = '';
 
-if ($_GET['next']) {
-  $result['nextUrl'] = $_GET['next'];
+if ($_GET['status']) {
+  $result['status'] = $_GET['status'];
+};
+
+if ($_GET['message']) {
+  $result['message'] = $_GET['message'];
+};
+
+if ($_GET['nextUrl']) {
+  $result['nextUrl'] = $_GET['nextUrl'];
 };
 
 echo json_encode($result);
